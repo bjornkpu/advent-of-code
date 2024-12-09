@@ -1,4 +1,4 @@
-namespace _2024.Day1;
+namespace AoC2024.Day1;
 
 internal static class Day1
 {

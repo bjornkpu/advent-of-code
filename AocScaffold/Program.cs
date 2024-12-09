@@ -34,7 +34,7 @@ return;
 void CreateProgramFile ()
 {
     var content = $$"""
-                    namespace _{{year}}.Day{{day}};
+                    namespace AoC{{year}}.Day{{day}};
                     
                     internal static class Day{{day}}
                     {
@@ -58,7 +58,7 @@ void CreateTestFile()
                     using Xunit;
                     using Xunit.Abstractions;
                     
-                    namespace _{{year}}.Day{{day}};
+                    namespace AoC{{year}}.Day{{day}};
                     
                     public class Day{{day}}Tests(ITestOutputHelper testOutputHelper)
                     {

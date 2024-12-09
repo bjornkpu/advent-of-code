@@ -1,7 +1,7 @@
 using Xunit;
 using Xunit.Abstractions;
 
-namespace _2024.Day1;
+namespace AoC2024.Day1;
 
 public class Day1Tests(ITestOutputHelper testOutputHelper)
 {
