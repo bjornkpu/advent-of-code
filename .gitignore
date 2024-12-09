@@ -1,0 +1,6 @@
+﻿obj/
+bin/
+.idea/
+*.DotSettings.user
+example.txt
+input.txt
