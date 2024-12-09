@@ -40,11 +40,11 @@ void CreateProgramFile ()
                     {
                         public static string Part1(string input)
                         {
-                            return string.Empty();
+                            return string.Empty;
                         }
                         public static string Part2(string input)
                         {
-                            return string.Empty();
+                            return string.Empty;
                         }
                     }
                     """;
