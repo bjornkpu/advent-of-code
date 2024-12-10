@@ -38,11 +38,11 @@ void CreateProgramFile ()
                     
                     internal static class Day{{day}}
                     {
-                        public static string Part1(string input)
+                        public static int Part1(string input)
                         {
                             return string.Empty;
                         }
-                        public static string Part2(string input)
+                        public static int Part2(string input)
                         {
                             return string.Empty;
                         }
@@ -67,19 +67,19 @@ void CreateTestFile()
                         public static IEnumerable<object[]> TestData =>
                         new List<object[]>
                         {
-                            new object[] { Day{{day}}.Part1, "example.txt", "-1" },
-                            new object[] { Day{{day}}.Part1, "input.txt", "-1" },
-                            new object[] { Day{{day}}.Part2, "example.txt", "-2" },
-                            new object[] { Day{{day}}.Part2, "input.txt", "-2" }
+                            new object[] { Day{{day}}.Part1, "example.txt", -1 },
+                            new object[] { Day{{day}}.Part1, "input.txt", -1 },
+                            new object[] { Day{{day}}.Part2, "example.txt", -2 },
+                            new object[] { Day{{day}}.Part2, "input.txt", -2 }
                         };
                     
                         [Theory, MemberData(nameof(TestData))]
-                        public void Test(Func<string, string> fn, string file, string expectedResult)
+                        public void Test(Func<string, int> fn, string file, int expectedResult)
                         {
                             var input = File.ReadAllText($"../../../Day{Day}/{file}");
                             var result = fn(input);
                             Assert.Equal(expectedResult, result);
-                            testOutputHelper.WriteLine(result);
+                            testOutputHelper.WriteLine(result.ToString());
                         }
                     }
                     """;
